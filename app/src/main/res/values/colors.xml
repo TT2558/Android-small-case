@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorYellow">#fff000</color>
+    <color name="peachpuff">#FFDAB9</color><!--桃色 -->
+    <color name="blanchedalmond">#FFEBCD</color><!--白杏色 -->
+
+</resources>
