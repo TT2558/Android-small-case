@@ -9,7 +9,7 @@ fun main(){
     var a = method("🆘")
     println(a)
 
-    val list = listOf<String>("apple","orange","banana","watermelon")ld
+    val list = listOf<String>("apple","orange","banana","watermelon")
 
     if (list has "banana"){
         println(list.last())
