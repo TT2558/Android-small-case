@@ -14,6 +14,11 @@ fun main(){
     if (list has "banana"){
         println(list.last())
     }
+    
+
+    val result2 = getGenericType<String>()
+    val result3 = getGenericType<Int>()
+    println("result is $result2  result2 is $result3")
 
     val map = mapOf("apple" with 1,"banana" with 2)
 

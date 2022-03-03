@@ -1,6 +1,5 @@
 package com.example.myapplication.activity
 
-import android.animation.ObjectAnimator
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
@@ -12,6 +11,8 @@ import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
+import com.bumptech.glide.annotation.GlideModule
+import com.bumptech.glide.module.AppGlideModule
 import com.example.myapplication.R
 import com.example.myapplication.fragment.MainActivity2
 import kotlinx.android.synthetic.main.activity_main.*
@@ -37,8 +38,6 @@ class MainActivity : AppCompatActivity() , View.OnClickListener {
         timeChangeReceiver = TimeChangeReceiver()
         registerReceiver(timeChangeReceiver, intentFilter)
 
-
-
     }
 
     override fun onDestroy() {
@@ -57,11 +56,17 @@ class MainActivity : AppCompatActivity() , View.OnClickListener {
             R.id.send -> {
                 val inputText = input_message.text.toString()
                 Toast.makeText(this, inputText, Toast.LENGTH_SHORT).show()
+                "ModifyToast".showToast(this ,Toast.LENGTH_SHORT)
                 Log.d("MainActivity","哈哈哈哈哈哈哈哈哈哈😝")
+                
             }
             R.id.button3 ->{
-                val intent = Intent(this, FirstActivity::class.java)
-                startActivity(intent)
+                startActivity<FirstActivity>(this){
+                    putExtra("param1","data")
+                    putExtra("param2","123")
+                }
+//                val intent = Intent(this, FirstActivity::class.java)
+//                startActivity(intent)
             }
             R.id.pic ->{
                 val url: String = "https://pt-starimg.didistatic.com/static/starimg/img/L0bdv8wIy31642405816555.png"

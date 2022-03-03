@@ -19,6 +19,10 @@ class FirstActivity : AppCompatActivity() {
         val button1 : Button = findViewById(R.id.button1)
         button1.setOnClickListener {
 //            Toast.makeText(this, "你点击了这个按钮", Toast.LENGTH_SHORT).show()
+            val intent1 = Intent(this, SecondActivity::class.java)
+            intent1.putExtra("String_data","hello")
+            intent1.putExtra("int_data",100)
+            startActivity(intent1)
             val intent = Intent(Intent.ACTION_DIAL)
             intent.data= Uri.parse("tel:10086")
             startActivity(intent)

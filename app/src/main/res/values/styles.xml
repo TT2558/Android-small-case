@@ -1,9 +1,9 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/peachpuff</item>
+        <item name="colorPrimary" >@color/peachpuff</item>
         <item name="colorPrimaryDark">@color/blanchedalmond</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
